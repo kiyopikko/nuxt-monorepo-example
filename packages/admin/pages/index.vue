@@ -11,14 +11,14 @@ import Vue from 'vue'
 export default Vue.extend({
   computed: {
     text() {
-      return this.$store.getters['test/text']
+      return this.$store.getters['simple/text']
     },
   },
   mounted() {
     this.$log()
-    this.$store.commit('test/setText', { text: 'mounted!' })
+    this.$store.commit('simple/setText', { text: 'mounted!' })
     setTimeout(() => {
-      this.$store.commit('test/setText', { text: '' })
+      this.$store.commit('simple/setText', { text: '' })
     }, 2000)
   },
 })
