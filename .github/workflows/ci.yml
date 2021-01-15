@@ -45,7 +45,10 @@ jobs:
         run: yarn
 
       - name: Run linter 👀
-        run: yarn lint
+        run: yarn lerna run lint
 
       - name: Run tests 🧪
-        run: yarn test
+        run: yarn lerna run test
+
+      - name: Run build 📦
+        run: yarn lerna run build
