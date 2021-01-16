@@ -10,6 +10,11 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "test:admin": "vue-cli-service test:unit --projects packages/admin",
+    "test:base": "vue-cli-service test:unit --projects packages/base",
+    "test": "vue-cli-service test:unit"
+  },
   "dependencies": {
     "@nuxt/typescript-runtime": "^2.0.0",
     "@vue/composition-api": "^1.0.0-beta.25",
@@ -27,6 +32,8 @@
     "@nuxtjs/style-resources": "^1.0.0",
     "@nuxtjs/stylelint-module": "^4.0.0",
     "@types/jest": "^26.0.20",
+    "@vue/cli-plugin-unit-jest": "^4.5.10",
+    "@vue/cli-service": "^4.5.10",
     "@vue/test-utils": "^1.1.0",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.1.0",
