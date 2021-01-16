@@ -7,7 +7,6 @@ declare module 'vue/types/vue' {
 }
 
 declare module 'vuex' {
-  // eslint-disable-next-line no-unused-vars,@typescript-eslint/no-unused-vars
   interface Store<S> {
     $log: () => void
   }
