@@ -12,7 +12,6 @@ module.exports = {
   },
   collectCoverage: true,
   collectCoverageFrom: ['<rootDir>/components/**/*.vue'],
-  testMatch: undefined,
   testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.(js|ts)$',
   preset: 'ts-jest',
 }
