@@ -52,3 +52,6 @@ jobs:
 
       - name: Run build 📦
         run: yarn lerna run build
+
+      - name: Run generate 🚀
+        run: yarn lerna run generate
